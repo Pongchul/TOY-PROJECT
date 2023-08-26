@@ -1,4 +1,4 @@
-package com.FBLAB.member.domain;
+package com.FBLAB.backend.member.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -16,4 +16,7 @@ public class Member {
 
     private String memberName;
     private String NickName;
+
+    @Embedded
+    private UserId userId;
 }
