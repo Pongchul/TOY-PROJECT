@@ -19,4 +19,7 @@ public class Member {
 
     @Embedded
     private UserId userId;
+
+    @Embedded
+    private UserName userName;
 }

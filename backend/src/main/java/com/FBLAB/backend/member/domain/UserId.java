@@ -1,6 +1,5 @@
 package com.FBLAB.backend.member.domain;
 
-import com.FBLAB.backend.member.exception.MemberErrorCode;
 import com.FBLAB.backend.member.exception.MemberException;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
