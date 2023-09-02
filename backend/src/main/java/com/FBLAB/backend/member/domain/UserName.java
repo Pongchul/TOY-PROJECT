@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class UserName {
 
-    private static final int MINIMUM_LENGTH = 1;
+    private static final int MINIMUM_LENGTH = 3;
     private static final int MAXIMUM_LENGTH = 20;
 
     @Column(name = "name", length = 20)
