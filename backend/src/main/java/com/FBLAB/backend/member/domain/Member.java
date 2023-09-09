@@ -11,15 +11,22 @@ public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "member_id")
-    private Long memberId;
-
-    private String memberName;
-    private String NickName;
+    private Long id;
 
     @Embedded
     private UserId userId;
 
     @Embedded
     private UserName userName;
+
+    @Embedded
+    private Password password;
+
+    public Member(UserId userId, UserName userName, Password password) {
+        this.userId = userId;
+        this.userName = userName;
+        this.password = password;
+    }
+
+
 }
